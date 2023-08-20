@@ -24,8 +24,15 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_actionNew_triggered();
+
+    void on_actionOpen_triggered();
+
+    void on_actionsave_triggered();
+
 private:
     Ui::MainWindow *ui;
-    QString curentFile ="";
+    QString currentFile ="";
 };
 #endif // MAINWINDOW_H
